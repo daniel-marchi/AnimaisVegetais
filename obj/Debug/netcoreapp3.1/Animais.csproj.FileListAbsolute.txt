@@ -1,0 +1,12 @@
+/Users/daniel/Develop/Sandbox/Animais/bin/Debug/netcoreapp3.1/Animais.deps.json
+/Users/daniel/Develop/Sandbox/Animais/bin/Debug/netcoreapp3.1/Animais.runtimeconfig.json
+/Users/daniel/Develop/Sandbox/Animais/bin/Debug/netcoreapp3.1/Animais.runtimeconfig.dev.json
+/Users/daniel/Develop/Sandbox/Animais/bin/Debug/netcoreapp3.1/Animais.dll
+/Users/daniel/Develop/Sandbox/Animais/bin/Debug/netcoreapp3.1/Animais.pdb
+/Users/daniel/Develop/Sandbox/Animais/obj/Debug/netcoreapp3.1/Animais.csprojAssemblyReference.cache
+/Users/daniel/Develop/Sandbox/Animais/obj/Debug/netcoreapp3.1/Animais.AssemblyInfoInputs.cache
+/Users/daniel/Develop/Sandbox/Animais/obj/Debug/netcoreapp3.1/Animais.AssemblyInfo.cs
+/Users/daniel/Develop/Sandbox/Animais/obj/Debug/netcoreapp3.1/Animais.csproj.CoreCompileInputs.cache
+/Users/daniel/Develop/Sandbox/Animais/obj/Debug/netcoreapp3.1/Animais.dll
+/Users/daniel/Develop/Sandbox/Animais/obj/Debug/netcoreapp3.1/Animais.pdb
+/Users/daniel/Develop/Sandbox/Animais/obj/Debug/netcoreapp3.1/Animais.genruntimeconfig.cache
