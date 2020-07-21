@@ -7,32 +7,30 @@ namespace Animais
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Qual animal vc escolhe?");
-            var animal = Console.ReadLine();
+            while (true)
+            {
+                Console.WriteLine("Qual animal vc escolhe?");
+                var animal = CriarAnimal(Console.ReadLine());
 
-            var alface = new Alface().Tipo;
-
-            if (animal == "tartaruga")
-            {
-                var tartaruga = new Tartaruga();
-                tartaruga.Andar();
-                tartaruga.Comer(alface);
+                animal.Andar();
+                animal.Comer(new Alface().Tipo);
             }
-            else if (animal == "cachorro")
+        }
+        //Fabrica
+        static Animal CriarAnimal(string tipoDeAnimal)
+        {
+            switch (tipoDeAnimal)
             {
-                var cachorro = new Cachorro();
-                cachorro.Andar();
-                cachorro.Comer(alface);
-            }
-            else if (animal == "leopardo")
-            {
-                var leopardo = new Leopardo();
-                leopardo.Andar();
-                leopardo.Comer(alface);
-            }
-            else
-            {
-                Console.WriteLine("Desculpe, não conheço este animal.");
+                case "tartaruga":
+                    return new Tartaruga();
+                case "cachorro":
+                    return new Cachorro();
+                case "leopardo":
+                    return new Leopardo();
+                case "boi":
+                    return new Boi();
+                default:
+                    throw new Exception("Desculpe, não conheço este animal.");
             }
         }
     }
