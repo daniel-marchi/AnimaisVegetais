@@ -10,25 +10,31 @@ namespace Animais
             while (true)
             {
                 Console.WriteLine("Qual animal vc escolhe?");
+
                 var animal = CriarAnimal(Console.ReadLine());
 
                 animal.Andar();
                 animal.Comer(new Alface().Tipo);
             }
         }
-        //Fabrica
+
         static Animal CriarAnimal(string tipoDeAnimal)
+        {
+            return CriarAnimal(Enum.Parse<AnimalEspecie>(tipoDeAnimal, true));
+        }
+        //Fabrica
+        static Animal CriarAnimal(AnimalEspecie tipoDeAnimal)
         {
             switch (tipoDeAnimal)
             {
-                case "tartaruga":
-                    return new Tartaruga();
-                case "cachorro":
-                    return new Cachorro();
-                case "leopardo":
-                    return new Leopardo();
-                case "boi":
+                case AnimalEspecie.Boi:
                     return new Boi();
+                case AnimalEspecie.Cachorro:
+                    return new Cachorro();
+                case AnimalEspecie.Leopardo:
+                    return new Leopardo();
+                case AnimalEspecie.Tartaruga:
+                    return new Tartaruga();
                 default:
                     throw new Exception("Desculpe, não conheço este animal.");
             }
